@@ -13,6 +13,14 @@ p.b {
     line-height: 2.0;
 }
 
+h2.offsetter {
+  padding-top: 130px;
+}
+
+div.offsetter {
+  padding-top: 50px;
+}
+
 div.heavy {
 
   font-weight: bold;
