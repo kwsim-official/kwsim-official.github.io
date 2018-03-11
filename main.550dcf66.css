@@ -26,13 +26,13 @@ div.heavy {
   font-weight: bold;
 }
 
-.fade {
+div.fade {
    opacity: 1;
    transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out;
    }
 
-.fade:hover {
+div.fade:hover {
       opacity: 0.5;
       }
