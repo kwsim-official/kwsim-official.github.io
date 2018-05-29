@@ -17,7 +17,15 @@ h2.offsetter {
   padding-top: 130px;
 }
 
+h4.big {
+  font-size: 60px;
+  font-weight: bold;
+}
 
+.logo {
+  padding-top: 15px;
+  padding-left: 10px;
+}
 
 div.offsetter {
   padding-top: 50px;
@@ -53,7 +61,7 @@ h4.color {
 
 .center {
   margin:auto;
-  width: 60%;
+  width: 85%;
   padding: 10px;
 }
 
