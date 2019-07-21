@@ -96,10 +96,57 @@ h4.color {
   position:relative;
 }
 
+h4.caption {
+  font-family: 'Roboto', sans-serif;
+  font-weight: inherit;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+}
+
 .caption {
-  padding: 0px;
+  max-width:100%;
+  max-height:100%;
+  padding: 10px;
   padding-bottom: 0px;
   margin: 0px;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.caption:hover{
+  opacity:0.5;
+}
+
+.image-holder {
+  max-height: 100%;
+  width: 100%;
+  position:relative; 
+}    
+.image-holder:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(105,105,105,0.8);
+  transition: all .3s linear;
+}
+.image-holder:hover:before { 
+  background: none;
+}
+
+.thumbnail {
+  padding: 10px !important;
 }
 
 html, body{overflow-x: hidden;}
