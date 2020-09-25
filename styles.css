@@ -1,0 +1,133 @@
+.large-thumbnail {
+  padding-right: 40px !important;
+  padding-left: 40px !important;
+  margin-bottom: 10px;
+}
+
+p.b {
+  line-height: 2;
+}
+
+p.font {
+  font-size: 11px;
+  line-height: 2;
+}
+
+h2.offsetter {
+  padding-top: 130px;
+}
+
+h4.big {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.logo {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+div.offsetter {
+  padding-top: 50px;
+}
+
+div.heavy {
+  font-weight: bold;
+}
+
+div.fade {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
+
+div.fade:hover {
+  opacity: 0.5;
+}
+
+h1.color {
+  color: #424242;
+}
+
+h2.color {
+  color: #424242;
+}
+
+h4.color {
+  color: #689f38;
+}
+
+.center {
+  margin: auto;
+  width: 85%;
+  padding: 10px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+.tinted {
+  opacity: 0.5;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.holder {
+  position: relative;
+}
+
+h4.caption {
+  font-family: "Roboto", sans-serif;
+  font-weight: inherit;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+}
+
+.image-holder {
+  max-height: 100%;
+  width: 100%;
+  position: relative;
+}
+.image-holder:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(105, 105, 105, 0.8);
+  transition: all 0.3s linear;
+}
+.image-holder:hover:before {
+  opacity: 0.5;
+}
+
+.thumbnail {
+  padding: 10px !important;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
