@@ -60,94 +60,44 @@
 
   <div class="section-container">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-8 col-md-offset-2">
-          <h2 class="text-center color" id="uw">
-            University of Waterloo Biomedical Engineering Collaboration
-          </h2>
-          <p class="text-center">
-            We hope to foster the development of new and exciting medical
-            technology, starting at the student level. To that end, we are
-            collaborating with the University of Waterloo Biomedical
-            Engineering program in a formalized manner.
-          </p>
-          <p class="text-center">
-            KWSIM draws on its members’ insight into medicine and pharmacy as
-            well as its network of local healthcare providers in order to
-            provide engineering student groups with valuable feedback and
-            guidance on yearly design projects.
-          </p>
-
-          <div class="section-container-spacer">
-            <img src="./assets/images/stockphotos/engineering.jpeg" alt="" class="img-responsive reveal-content"
-              data-action="zoom" />
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-8 col-md-offset-2">
-          <h2 class="text-center color" id="ww">
-            Waterloo-Wellington Clinical Research and Quality Improvement
-            Symposium
-          </h2>
-          <p class="text-center">
-            KWSIM believes that Kitchener-Waterloo has the potential to be a
-            leader in medical technology. We therefore recognize the
-            importance of staying involved with our local community. Last
-            year, we ran a panel session at the 2018 Waterloo-Wellington
-            Clinical Research and Quality Improvement Symposium and were
-            honoured to receive the award for best podium presentation. We
-            hope to see you at the 2019 WWCRQI!
-          </p>
-
-          <div class="section-container-spacer">
-            <img src="./assets/images/stockphotos/symposium.jpg" alt="" class="img-responsive reveal-content"
-              data-action="zoom" />
-          </div>
-          <p class="text-center"><i> Photo Courtesy of WWCRQI </i></p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-12 col-md-8 col-md-offset-2">
-          <h2 class="text-center color" id="li">
-            Local Initiative Consultation
-          </h2>
-          <p class="text-center">
-            KWSIM is able to exist because of the vibrant medical technology
-            space that already exists in the Kitchener-Waterloo Region. We aim
-            to support the continued growth of this community. KWSIM provides
-            a sounding board for local startups and initiatives to receive
-            unbiased feedback from students with a wide variety of expertise
-            in engineering, medicine, pharmacy, business and more. If you or
-            your group are interested, please reach out.
-          </p>
-
-          <div class="section-container-spacer">
-            <img src="./assets/images/stockphotos/consult.jpg" alt="" class="img-responsive reveal-content"
-              data-action="zoom" />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12 col-md-8 col-md-offset-2">
-            <h2 class="text-center color" id="ld">
-              Learning and Development
-            </h2>
-            <p class="text-center">
-              As a student organization, we recognize that continued learning
-              is integral to our professional development. Therefore, we are
-              actively looking to learn from experts in the fields of
-              medicine, technology and entrepreneurship. Please contact us if
-              you would be interested in speaking to us!
-            </p>
-
-            <div class="section-container-spacer">
-              <img src="./assets/images/stockphotos/conversation.jpg" alt="" class="img-responsive reveal-content"
-                data-action="zoom" />
+      <!-- Form to collect responses -->
+      <div class="card card-shadow col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 reveal" style="margin-top: 5%;">
+        <h3 style="text-align:center">Submit a Clinical Problem</h3>
+        <form
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdDUdwIg3ueo4SV9f87AXuUA5tX_7bn3wgBjCNiY6jSli1HUg/formResponse"
+          method="POST" class="reveal-content">
+          <div class="row">
+            <div class="form-group">
+              <textarea class="form-control" rows="3" placeholder="What is your clinical problem? Please be specific."
+                name="entry.1932772002" required></textarea>
             </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="3"
+                placeholder="Keywords for your clinical problem. Please enter keywords separated by commas."
+                name="entry.1778749419"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" placeholder="Name" name="entry.1875658523" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="email" placeholder="Email" name="entry.1905913782" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="faculty" placeholder="Faculty/Institutional Association"
+                name="entry.951629579" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="title" placeholder="Title/Position" name="entry.780877370" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="comments" placeholder="Additional Comments/Suggestions"
+                name="entry.774403862" />
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Send message
+            </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
