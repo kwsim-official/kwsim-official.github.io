@@ -63,38 +63,36 @@
       <!-- Form to collect responses -->
       <div class="card card-shadow col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 reveal" style="margin-top: 5%;">
         <h3 style="text-align:center">Submit a Clinical Problem</h3>
-        <form
-          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdDUdwIg3ueo4SV9f87AXuUA5tX_7bn3wgBjCNiY6jSli1HUg/formResponse"
-          method="POST" class="reveal-content">
+        <form action="" method="POST" class="reveal-content" id="serverless-form" name="serverless-form">
           <div class="row">
             <div class="form-group">
               <textarea class="form-control" rows="3" placeholder="What is your clinical problem? Please be specific."
-                name="entry.2085738863" required></textarea>
+                name="entry.1932772002" required></textarea>
             </div>
             <div class="form-group">
               <textarea class="form-control" rows="3"
                 placeholder="Keywords for your clinical problem. Please enter keywords separated by commas."
-                name="entry.914276057"></textarea>
+                name="entry.1778749419"></textarea>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="name" placeholder="Name" name="entry.821183084" />
+              <input type="text" class="form-control" id="name" placeholder="Name" name="entry.1875658523" />
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="email" placeholder="Email" name="entry.678011315" />
+              <input type="text" class="form-control" id="email" placeholder="Email" name="entry.1905913782" />
             </div>
             <div class="form-group">
               <input type="text" class="form-control" id="faculty" placeholder="Faculty/Institutional Association"
-                name="entry.111692745" />
+                name="entry.951629579" />
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="title" placeholder="Title/Position" name="entry.1539898125" />
+              <input type="text" class="form-control" id="title" placeholder="Title/Position" name="entry.780877370" />
             </div>
             <div class="form-group">
               <input type="text" class="form-control" id="comments" placeholder="Additional Comments/Suggestions"
-                name="entry.1791387719" />
+                name="entry.774403862" />
             </div>
             <button type="submit" class="btn btn-primary">
-              Send message
+              Submit Problem
             </button>
           </div>
         </form>
@@ -117,17 +115,6 @@
               </p>
             </div>
             <div class="col-xs-12 col-sm-5">
-              <!-- <p class="text-right">
-              <a href="https://facebook.com/" class="social-round-icon white-round-icon fa-icon" title="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="https://twitter.com/" class="social-round-icon white-round-icon fa-icon" title="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.linkedin.com/" class="social-round-icon white-round-icon fa-icon" title="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-            </p> -->
             </div>
           </div>
         </div>
@@ -157,6 +144,22 @@
 
 -->
   <script type="text/javascript" src="./main.0cf8b554.js"></script>
+  <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+  <script>
+    const serverlessForm = document.forms['serverless-form'];
+    serverlessForm.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSdDUdwIg3ueo4SV9f87AXuUA5tX_7bn3wgBjCNiY6jSli1HUg/formResponse", {
+        method: 'POST',
+        mode: 'no-cors',
+        body: new FormData(serverlessForm)
+      }).then(() => {
+        alert("Your problem was submitted successfully!")
+      }).catch(err => {
+        console.log(err)
+      })
+    });
+  </script>
 </body>
 
 </html>
