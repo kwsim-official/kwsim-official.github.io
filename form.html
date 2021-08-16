@@ -149,9 +149,10 @@
     const serverlessForm = document.forms['serverless-form'];
     serverlessForm.addEventListener('submit', e => {
       e.preventDefault();
-      fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSdDUdwIg3ueo4SV9f87AXuUA5tX_7bn3wgBjCNiY6jSli1HUg/formResponse", {
+      fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSchYfB4YoSTfnUUPMKGzYWhPpb99E0DpxHwY08mge3PtrD9Yw/formResponse", {
         method: 'POST',
         mode: 'no-cors',
+        referrerPolicy: 'no-referrer',
         body: new FormData(serverlessForm)
       }).then(() => {
         alert("Your problem was submitted successfully!")
