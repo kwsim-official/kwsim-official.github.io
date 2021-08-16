@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png" />
   <link href="./assets/favicon.ico" rel="icon" />
 
-  <link href="" rel="stylesheet" />
+  <link href="./styles.css" rel="stylesheet" />
 
   <title>Projects</title>
 
@@ -66,8 +66,9 @@
         <form action="" method="POST" class="reveal-content" id="serverless-form" name="serverless-form">
           <div class="row">
             <div class="form-group">
-              <textarea class="form-control" rows="3" placeholder="What is your clinical problem? Please be specific."
-                name="entry.1932772002" required></textarea>
+              <textarea class="form-control required" rows="3"
+                placeholder="What is your clinical problem? Please be specific. (required)" name="entry.1932772002"
+                required></textarea>
             </div>
             <div class="form-group">
               <textarea class="form-control" rows="3"
@@ -156,6 +157,7 @@
         body: new FormData(serverlessForm)
       }).then(() => {
         alert("Your problem was submitted successfully!")
+        document.getElementById("serverless-form").reset();
       }).catch(err => {
         console.log(err)
       })

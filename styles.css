@@ -131,3 +131,7 @@ html,
 body {
   overflow-x: hidden;
 }
+
+textarea.required::placeholder {
+  color: #ff0000 !important;
+}
