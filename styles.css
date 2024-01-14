@@ -141,6 +141,10 @@ textarea.required::placeholder {
   text-align: left;
 }
 
+.image-center {
+  border-radius: 20px;
+}
+
 .img-placeholder {
   height: 300px;
   width: 300px;
