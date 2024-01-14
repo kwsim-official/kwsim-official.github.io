@@ -135,3 +135,14 @@ body {
 textarea.required::placeholder {
   color: #ff0000 !important;
 }
+
+/* Un-center information blurbs for past members as they are shorter and more bullet-pointed. */
+.past-members > .container .row .col-xs-12 ul {
+  text-align: left;
+}
+
+.img-placeholder {
+  height: 300px;
+  width: 300px;
+  background: #e6e9f2;
+}
